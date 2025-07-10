@@ -6,15 +6,28 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#types"
+		},
+		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.bloch",
-				"match": "\\b(void|function|import|return|if|else|for|class|measure|final|reset|public|private)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.bloch",
+					"match": "\\b(void|function|import|return|if|else|for|class|measure|final|reset|public|private)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.bloch",
+					"match": "\\b(int|float|string|char|qubit|bit)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.bloch",
