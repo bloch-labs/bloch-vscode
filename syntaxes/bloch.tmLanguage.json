@@ -9,7 +9,7 @@
 			"include": "#types"
 		},
 		{
-			"include": "#strings"
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -29,14 +29,11 @@
 				}
 			]
 		},
-		"strings": {
-			"name": "string.quoted.double.bloch",
-			"begin": "\"",
-			"end": "\"",
+		"comments": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.bloch",
-					"match": "\\\\."
+					"name": "comment.line.double-slash.bloch",
+					"match": "//.*$"
 				}
 			]
 		}
