@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.bloch",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(void|function|import|return|if|else|for|class|measure|final|reset|public|private)\\b"
 			}]
 		},
 		"strings": {
