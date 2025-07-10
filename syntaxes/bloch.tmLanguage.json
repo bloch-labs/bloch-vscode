@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -34,6 +37,52 @@
 				{
 					"name": "comment.line.double-slash.bloch",
 					"match": "//.*$"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.bloch",
+					"begin": "\"",
+					"end": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.bloch"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.bloch"
+						}
+					},
+					"patterns": [
+						{
+							"name": "constant.character.escape.bloch",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "constant.character.bloch",
+					"begin": "'",
+					"end": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.char.begin.bloch"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.char.end.bloch"
+						}
+					},
+					"patterns": [
+						{
+							"name": "constant.character.escape.bloch",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		}
