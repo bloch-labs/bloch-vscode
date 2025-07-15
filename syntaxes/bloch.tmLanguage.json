@@ -16,6 +16,9 @@
 		},
 		{
 			"include": "#numbers"
+		},
+		{
+			"include": "#builtin"
 		}
 	],
 	"repository": {
@@ -98,6 +101,14 @@
 				{
 					"name": "constant.numeric.bloch",
 					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"builtin": {
+			"patterns": [
+				{
+					"name": "support.function.bloch",
+					"match": "\\b(h|x|y|z|rx|ry|rz|cx|echo)\\b"
 				}
 			]
 		}
