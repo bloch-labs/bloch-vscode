@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#builtin"
+		},
+		{
+			"include": "#annotations"
 		}
 	],
 	"repository": {
@@ -109,6 +112,59 @@
 				{
 					"name": "support.function.bloch",
 					"match": "\\b(h|x|y|z|rx|ry|rz|cx|echo)\\b"
+				}
+			]
+		},
+		"annotations": {
+			"patterns": [
+				{
+					"name": "meta.annotation.bloch",
+					"begin": "(@)([A-Za-z_][A-Za-z0-9_]*)\\s*(\\()",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.definition.annotation.bloch"
+						},
+						"2": {
+							"name": "storage.modifier.annotation.bloch"
+						},
+						"3": {
+							"name": "punctuation.section.group.begin.bloch"
+						}
+					},
+					"end": "\\)",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.section.group.end.bloch"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#strings"
+						},
+						{
+							"include": "#numbers"
+						},
+						{
+							"name": "punctuation.separator.comma.bloch",
+							"match": ","
+						},
+						{
+							"name": "constant.character.escape.bloch",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "meta.annotation.bloch",
+					"match": "(@)([A-Za-z_][A-Za-z0-9_]*)",
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.annotation.bloch"
+						},
+						"2": {
+							"name": "storage.modifier.annotation.bloch"
+						}
+					}
 				}
 			]
 		}
