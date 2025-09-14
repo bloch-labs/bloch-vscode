@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.bloch",
-					"match": "\\b(void|function|import|return|if|else|for|class|measure|final|reset|public|private)\\b"
+					"match": "\\b(void|function|return|if|else|for|measure|final|reset)\\b"
 				}
 			]
 		},
@@ -99,7 +99,11 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.bloch",
-					"match": "\\b\\d+\\.\\d+(?:[eE][-+]?\\d+)?f\\b"
+					"match": "\\b\\d+\\.\\d+f\\b"
+				},
+				{
+					"name": "constant.numeric.bloch",
+					"match": "\\b[01]b\\b"
 				},
 				{
 					"name": "constant.numeric.bloch",
