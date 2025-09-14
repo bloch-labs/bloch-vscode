@@ -1,7 +1,9 @@
 {
   "name": "bloch-vscode",
   "displayName": "bloch-vscode",
-  "description": "The official VSCode extension for the Bloch quantum programming language!",
+  "publisher": "Akshay Pal",
+  "description": "The official VSCode extension for the Bloch programming language",
+  "keywords": ["quantum", "bloch", "language"],
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.54.0"
