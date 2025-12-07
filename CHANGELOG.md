@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/bloch-labs/bloch-vscode/compare/v0.1.0...v0.1.1) (2025-12-07)
+
+
+### Bug Fixes
+
+* add icon for extension ([#22](https://github.com/bloch-labs/bloch-vscode/issues/22)) ([34f48ff](https://github.com/bloch-labs/bloch-vscode/commit/34f48ffa1e34559f1e748abbadbead6c28266db4))
+
 ## [0.1.0](https://github.com/bloch-labs/bloch-vscode/compare/v0.0.1...v0.1.0) (2025-12-07)
 
 
