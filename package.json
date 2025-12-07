@@ -3,7 +3,11 @@
   "displayName": "bloch-vscode",
   "publisher": "AkshayPal",
   "description": "The official VSCode extension for the Bloch programming language",
-  "keywords": ["quantum", "bloch", "language"],
+  "keywords": [
+    "quantum",
+    "bloch",
+    "language"
+  ],
   "version": "0.1.0",
   "main": "./extension.js",
   "engines": {
