@@ -1,7 +1,5 @@
 # Bloch for VS Code
 
-The official VS Code extension for [Bloch](https://github.com/bloch-labs/bloch)
+Syntax highlighting for the [Bloch](https://github.com/bloch-labs/bloch) programming language. Open a `.bloch` file in VS Code to use it.
 
-## License
-
-Apache-2.0. See `LICENSE` for details.
+License: Apache-2.0 (see `LICENSE`).

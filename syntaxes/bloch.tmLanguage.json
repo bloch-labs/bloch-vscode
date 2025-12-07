@@ -21,6 +21,9 @@
 			"include": "#builtin"
 		},
 		{
+			"include": "#operators"
+		},
+		{
 			"include": "#annotations"
 		}
 	],
@@ -98,15 +101,15 @@
 		"numbers": {
 			"patterns": [
 				{
-					"name": "constant.numeric.bloch",
+					"name": "constant.numeric.float.bloch",
 					"match": "\\b\\d+\\.\\d+f\\b"
 				},
 				{
-					"name": "constant.numeric.bloch",
+					"name": "constant.numeric.bit.bloch",
 					"match": "\\b[01]b\\b"
 				},
 				{
-					"name": "constant.numeric.bloch",
+					"name": "constant.numeric.integer.bloch",
 					"match": "\\b\\d+\\b"
 				}
 			]
@@ -115,7 +118,15 @@
 			"patterns": [
 				{
 					"name": "support.function.bloch",
-					"match": "\\b(h|x|y|z|rx|ry|rz|cx|echo)\\b"
+					"match": "\\b(h|x|y|z|rx|ry|rz|cx|echo)\\b(?=\\s*\\()"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.bloch",
+					"match": "(\\+\\+|--|==|!=|<=|>=|<<|>>|&&|\\|\\||->|\\+=|-=|\\*=|/=|%=|&=|\\|=|\\^=|\\+|-|\\*|/|%|~|&|\\||\\^|=|<|>)"
 				}
 			]
 		},

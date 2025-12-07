@@ -5,23 +5,113 @@
   "description": "The official VSCode extension for the Bloch programming language",
   "keywords": ["quantum", "bloch", "language"],
   "version": "0.0.1",
+  "main": "./extension.js",
   "engines": {
     "vscode": "^1.54.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "activationEvents": [
+    "onLanguage:bloch"
+  ],
   "contributes": {
-    "languages": [{
-      "id": "bloch",
-      "aliases": ["Bloch", "bloch"],
-      "extensions": [".bloch"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "bloch",
-      "scopeName": "source.bloch",
-      "path": "./syntaxes/bloch.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "bloch",
+        "aliases": [
+          "Bloch",
+          "bloch"
+        ],
+        "extensions": [
+          ".bloch"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bloch",
+        "scopeName": "source.bloch",
+        "path": "./syntaxes/bloch.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              "meta.annotation.bloch",
+              "storage.modifier.annotation.bloch",
+              "punctuation.definition.annotation.bloch",
+              "punctuation.section.group.begin.bloch",
+              "punctuation.section.group.end.bloch"
+            ],
+            "settings": {
+              "foreground": "#FF5FAF"
+            }
+          },
+          {
+            "scope": [
+              "storage.type.bloch",
+              "support.function.bloch"
+            ],
+            "settings": {
+              "foreground": "#A56EFF"
+            }
+          },
+          {
+            "scope": [
+              "keyword.control.bloch"
+            ],
+            "settings": {
+              "foreground": "#3FD6FF"
+            }
+          },
+          {
+            "scope": [
+              "string.quoted.double.bloch",
+              "constant.character.bloch"
+            ],
+            "settings": {
+              "foreground": "#FF9E7B"
+            }
+          },
+          {
+            "scope": [
+              "constant.numeric.integer.bloch",
+              "constant.numeric.float.bloch"
+            ],
+            "settings": {
+              "foreground": "#FFE28A"
+            }
+          },
+          {
+            "scope": [
+              "constant.numeric.bit.bloch"
+            ],
+            "settings": {
+              "foreground": "#6FFFE9"
+            }
+          },
+          {
+            "scope": [
+              "keyword.operator.bloch"
+            ],
+            "settings": {
+              "foreground": "#FF7DE9"
+            }
+          },
+          {
+            "scope": [
+              "comment.line.double-slash.bloch"
+            ],
+            "settings": {
+              "foreground": "#6A9955"
+            }
+          }
+        ]
+      }
+    }
   }
 }
