@@ -33,6 +33,10 @@
 				{
 					"name": "keyword.control.bloch",
 					"match": "\\b(void|function|return|if|else|for|measure|final|reset)\\b"
+				},
+				{
+					"name": "keyword.control.class.bloch",
+					"match": "\\b(class|public|private|protected|static|extends|abstract|virtual|override|super|this|import|new|constructor|destructor|destroy)\\b"
 				}
 			]
 		},
