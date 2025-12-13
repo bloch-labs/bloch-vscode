@@ -106,7 +106,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.float.bloch",
-					"match": "\\b\\d+\\.\\d+f\\b"
+					"match": "\\b\\d+(?:\\.\\d+)?f\\b"
 				},
 				{
 					"name": "constant.numeric.bit.bloch",
